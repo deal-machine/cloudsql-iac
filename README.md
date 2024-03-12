@@ -32,10 +32,10 @@
 - Create a project
 - Create a Service Account - and get the credentials JSON
 
-## Steps
+ 
 
-- Import this project
-- Declare these variables:
+## Inputs
+
   - project_id
     - The Project Id
   - credentials
@@ -48,4 +48,11 @@
   - db_username
   - db_pass
 
+## Outputs
 
+  - db_info
+    - public_ip_address
+    - database
+    - user
+    - password
+    - sensitive = true
