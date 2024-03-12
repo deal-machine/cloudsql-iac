@@ -4,7 +4,7 @@ resource "google_sql_database_instance" "postgres" {
   project             = var.project_id
   database_version    = "POSTGRES_14"
   deletion_protection = false
-  
+
   settings {
     tier = "db-f1-micro"
     ip_configuration {
@@ -20,7 +20,7 @@ resource "google_sql_database_instance" "postgres" {
     }
   }
 
-  depends_on = [ google_project_service.sqladmin ]
+  depends_on = [google_project_service.sqladmin, google_project_service.cloudresourcemanager]
 }
 resource "google_sql_database" "database" {
   project    = var.project_id
