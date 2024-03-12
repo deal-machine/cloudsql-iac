@@ -1,5 +1,4 @@
 variable "project_id" {}
-variable "credentials" {}
 variable "zone" {}
 variable "region" {}
 variable "instance_name" {}
