@@ -37,13 +37,9 @@
 ## Inputs
 
   - project_id
-    - The Project Id
-  - credentials
-    - JSON file with credentials
   - zone
   - region
   - instance_name
-    - Name of postgres instance
   - db_name
   - db_username
   - db_pass
